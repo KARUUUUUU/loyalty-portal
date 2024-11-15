@@ -1,0 +1,183 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif; /* Modern font */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Georgia', serif;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Premium Gold Color */
+  .gold-text {
+    color: #d4af37;
+  }
+  
+  .gold-background {
+    background-color: #d4af37;
+    color: white;
+  }
+  
+  /* Container and Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #d4af37;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3e3e3e;
+  }
+  
+  a.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d4af37;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  a.button-link:hover {
+    background-color: #3e3e3e;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    transition: color 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: #d4af37;
+  }
+  
+  /* Mobile Navigation */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .navbar a {
+      margin: 10px 0;
+    }
+  }
+  
+  /* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer .footer-links {
+    margin-top: 20px;
+  }
+  
+  .footer .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .footer-links a:hover {
+    color: #d4af37;
+  }
+  
+  /* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .dashboard-container, .product-page, .login-container {
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .navbar-links {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .flip-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .product-details {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer .footer-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer .footer-links a {
+      margin: 5px 0;
+    }
+  }
+  

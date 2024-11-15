@@ -1,0 +1,104 @@
+/* Dashboard Page */
+.dashboard-container {
+    background-image: url('https://images5.alphacoders.com/349/349822.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .dashboard-header {
+    margin-bottom: 40px;
+    font-family: 'Lora', serif;
+  }
+  
+  .dashboard-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+  
+  .dashboard-header p {
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Flip Cards Section */
+  .flip-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Flip Card Styles */
+  .flip-card {
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    perspective: 1000px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+  }
+  
+  .flip-card-front {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .flip-card-back {
+    background-image: url('https://wallpapers.com/images/featured-full/gold-iphone-chw3sgdl3jnkry9t.jpg');
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .flip-card-back h3 {
+    font-size: 1.5rem;
+    color: #d4af37; /* Gold */
+    font-family: 'Lora', serif;
+  }
+  
+  .flip-card-back p {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  

@@ -1,0 +1,87 @@
+/* Reviews Page */
+.reviews-container {
+    background-image: url('https://images5.alphacoders.com/349/349822.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+  }
+  
+  .reviews-container h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #d4af37; /* Gold color for premium feel */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .reviews-list {
+    margin-top: 20px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .review-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .review-card h3 {
+    font-size: 1.5rem;
+    color: #d4af37;
+  }
+  
+  .review-card p {
+    font-size: 1rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .rating {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  .add-review-container {
+    margin-top: 50px;
+  }
+  
+  .add-review-container h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .rating-selector {
+    margin-bottom: 20px;
+  }
+  
+  .submit-review-btn {
+    background-color: #d4af37;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .submit-review-btn:hover {
+    background-color: #c99a2e;
+  }
+  
