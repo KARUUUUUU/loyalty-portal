@@ -1,104 +1,224 @@
 /* Dashboard Page */
 .dashboard-container {
-    background-image: url('https://images5.alphacoders.com/349/349822.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    min-height: 100vh;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .dashboard-header {
-    margin-bottom: 40px;
-    font-family: 'Lora', serif;
-  }
-  
-  .dashboard-header h2 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    color: #fff;
-  }
-  
-  .dashboard-header p {
-    font-size: 1.5rem;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  /* Flip Cards Section */
-  .flip-cards-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Flip Card Styles */
+  background-image: url('https://images5.alphacoders.com/349/349822.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-header {
+  margin-bottom: 40px;
+  font-family: 'Lora', serif;
+}
+
+.dashboard-header h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.dashboard-header p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Flip Cards Section */
+.flip-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flip Card Styles */
+.flip-card {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  perspective: 1000px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.flip-card-back {
+  background-image: url('https://wallpapers.com/images/featured-full/gold-iphone-chw3sgdl3jnkry9t.jpg');
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.flip-card-back h3 {
+  font-size: 1.5rem;
+  color: #d4af37; /* Gold */
+  font-family: 'Lora', serif;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Back Button Styling */
+.flip-card-back button {
+  background-color: #d4af37; /* Gold */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.flip-card-back button:hover {
+  background-color: #bfa126;
+  transform: scale(1.05);
+}
+
+/* Logout Button */
+.logout-button {
+  position: right;
+  top: 20px;
+  right: 20px;
+  background: #ff4d4d;
+  color: white;
+  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .flip-card {
-    width: 300px;
-    height: 400px;
-    background-color: #fff;
-    perspective: 1000px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease-in-out;
+      width: 250px;
+      height: 350px;
   }
-  
+
   .flip-card-inner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 15px;
-  }
-  
-  .flip-card-front {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .flip-card-back {
-    background-image: url('https://wallpapers.com/images/featured-full/gold-iphone-chw3sgdl3jnkry9t.jpg');
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+      transition: transform 0.4s ease-in-out;
   }
   
   .flip-card-back h3 {
-    font-size: 1.5rem;
-    color: #d4af37; /* Gold */
-    font-family: 'Lora', serif;
+      font-size: 1.3rem;
   }
   
   .flip-card-back p {
-    font-size: 1rem;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+      font-size: 0.9rem;
   }
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+}
+
+.hotel-title {
+  font-family: 'Lora', serif; /* Premium serif font for the hotel title */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.logout-button {
+  font-family: 'Roboto', sans-serif; /* Modern sans-serif font */
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: #d9534f; /* Bootstrap-like red */
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+.dashboard-divider {
+  width: 90%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 20px auto;
+  border: none;
+}
+
+.dashboard-intro {
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.flip-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
   
   
